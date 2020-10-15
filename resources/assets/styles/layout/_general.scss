@@ -1,0 +1,76 @@
+/*
+ * General Container Elements
+ *
+ * This file contains the site top-level and general wrapper elements.
+ *
+ *****************************************************************************/
+
+.site {
+}
+
+.page-content {
+}
+
+.section {
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+
+    &.width-sm {
+        max-width: $small-width;
+    }
+    &.width-md {
+        max-width: $medium-width;
+    }
+    &.width-lg {
+        max-width: $large-width;
+    }
+    &.width-xl {
+        max-width: $xlarge-width;
+    }
+    &.fluid {
+        max-width: none;
+    }
+}
+
+.spacer {
+    margin-bottom: $spacer;
+    margin-top: $spacer;
+}
+
+.spacer-x2 {
+    margin-bottom: $spacer-x2;
+    margin-top: $spacer-x2;
+}
+
+.spacer-x3 {
+    margin-bottom: $spacer-x2;
+    margin-top: $spacer-x2;
+
+    @include mq(medium) {
+        margin-bottom: $spacer-x3;
+        margin-top: $spacer-x3;
+    }
+}
+
+.padder {
+    padding-bottom: $spacer;
+    padding-top: $spacer;
+}
+
+.padder-x2 {
+    padding-bottom: $spacer-x2;
+    padding-top: $spacer-x2;
+}
+
+.padder-x3 {
+    padding-bottom: $spacer-x2;
+    padding-top: $spacer-x2;
+
+    @include mq(medium) {
+        padding-bottom: $spacer-x3;
+        padding-top: $spacer-x3;
+    }
+}

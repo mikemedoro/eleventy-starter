@@ -1,0 +1,89 @@
+/*
+ * Typography
+ *
+ * This file collects some basic typography styles for copy text.
+ *
+ *****************************************************************************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: $line-height-xs;
+    margin: 0 0 1rem;
+}
+
+h1,
+.size-h1 {
+    // @include size-h1;
+}
+
+h2,
+.size-h2 {
+}
+
+h3,
+.size-h3 {
+}
+
+h4,
+.size-h4 {
+}
+
+h5,
+.size-h5 {
+}
+
+h6,
+.size-h6 {
+}
+
+.display-1 {
+}
+
+.display-2 {
+}
+
+p {
+    margin-bottom: 1rem;
+
+    &.lead {
+        @include font-size(20px);
+
+        font-weight: $font-weight-bold;
+        line-height: $line-height-sm;
+        margin-bottom: 1.5rem;
+    }
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    @include on-event {
+        color: $color-highlight;
+    }
+}
+
+.mark,
+mark {
+    background-color: #fcf8e3;
+    padding: 0.2rem;
+}
+
+.small,
+small {
+    font-size: 80%;
+    font-weight: $font-weight-regular;
+}
+
+.font-sans {
+    font-family: $font-sans;
+}
+
+.font-serif {
+    font-family: $font-serif;
+}

@@ -1,0 +1,55 @@
+/*
+ * Carousel
+ *
+ * This file contains styles related to flickity carousels.
+ *
+ *****************************************************************************/
+
+.carousel {
+    margin-bottom: 3.5rem;
+    padding-bottom: 56.25%;
+
+    &__slide {
+        @include position(absolute, 0, null, null, 0, 1);
+        @include size(100%, 100%);
+
+        display: block;
+        overflow: hidden;
+    }
+    &__image {
+    }
+
+    .flickity-viewport {
+        position: absolute;
+        width: 100%;
+    }
+    .flickity-page-dots {
+        bottom: -3.5rem;
+
+        .dot {
+            @include size(8px);
+
+            background-color: $black;
+            opacity: 0.25;
+
+            &.is-selected {
+                opacity: 0.75;
+            }
+        }
+    }
+    .flickity-prev-next-button {
+        @include size(50px);
+
+        background: transparent;
+        border: 1px solid $white;
+        color: $white;
+        fill: $white;
+
+        .flickity-button-icon {
+            @include size(50%);
+
+            left: 25%;
+            top: 25%;
+        }
+    }
+}

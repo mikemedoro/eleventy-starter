@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		{% include "meta.njk" %}
+	</head>
+
+	<body class="site-body">
+		<a href="#primary-menu" class="visually-hidden">Skip to Main Navigation</a>
+		<a href="#page-content" class="visually-hidden">Skip to Content</a>
+
+		<div id="site" class="site">
+			{% include "header.njk" %}
+
+			<div id="page-content" class="page-content" role="main">
+				{{ content | safe }}
+			</div>
+
+			{% include "footer.njk" %}
+		</div>
+
+		<script src="./assets/scripts/app.js"></script>
+	</body>
+</html>

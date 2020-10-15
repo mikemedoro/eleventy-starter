@@ -1,0 +1,35 @@
+/*
+ * Button
+ *
+ * This file contains all styles related to the button component.
+ *
+ *****************************************************************************/
+
+.btn {
+    @include font-size(16px);
+
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    color: $color-primary;
+    display: inline-block;
+    padding: 0.75rem 1.75rem;
+    position: relative;
+    transition: border-color 0.3s, color 0.3s, background-color 0.3s;
+
+    @include on-event {
+        background-color: transparent;
+        border-color: $color-highlight;
+        color: $color-highlight;
+    }
+
+    &--sm {
+        @include font-size(14px);
+
+        padding: 0.5rem 1rem;
+    }
+    &--lrg {
+        @include font-size(18px);
+
+        padding: 1.5rem 2.5rem;
+    }
+}

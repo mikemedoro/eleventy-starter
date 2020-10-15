@@ -1,0 +1,30 @@
+/*
+ * Icon
+ *
+ * This file contains all styles related to an svg icon component.
+ *
+ *****************************************************************************/
+
+.icon {
+    @include size(20px);
+
+    display: inline-block;
+    transition: fill 0.3s $ease-in-out-quad;
+
+    &--sm {
+        @include size(16px);
+    }
+    &--md {
+        @include size(24px);
+    }
+    &--lg {
+        @include size(32px);
+    }
+    &--xl {
+        @include size(64px);
+    }
+
+    svg {
+        @include size(100%);
+    }
+}

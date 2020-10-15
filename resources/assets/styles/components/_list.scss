@@ -1,0 +1,36 @@
+/*
+ * List
+ *
+ * This file contains all styles related to lists.
+ *
+ *****************************************************************************/
+
+ul:not([class]),
+ol:not([class]) {
+    li {
+        margin: 0 0 0.25rem 0;
+    }
+    ul {
+        li {
+            margin: 0 0 0.25rem 0;
+        }
+    }
+}
+
+ul.list,
+ol.list {
+    li,
+    &__item {
+        margin: 0 0 0.25rem 0;
+    }
+    &--inline {
+        li,
+        &__item {
+            display: inline;
+
+            &:not(:last-child) {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

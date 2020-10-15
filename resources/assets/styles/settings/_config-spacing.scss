@@ -1,0 +1,13 @@
+/*
+ * Spacing
+ *
+ * This file collects the general spacing variables.
+ *
+ *****************************************************************************/
+
+$gutter: 1.875rem;
+$gutter-percent: 5%;
+
+$spacer: $gutter * 2;
+$spacer-x2: $gutter * 3;
+$spacer-x3: $gutter * 4;

@@ -1,0 +1,38 @@
+/*
+ * Colors
+ *
+ * This file collects all of the color variables.
+ *
+ *****************************************************************************/
+
+// Pure black
+// @type Color
+$black: #000;
+
+// Pure white
+// @type Color
+$white: #fff;
+
+// Brand color variables
+// @type Color
+$color-charcoal: #333;
+$color-teal: #3ebca0;
+$color-blue: #1e70e8;
+
+// Colors configs
+// @type Color
+$color-primary: $color-teal;
+$color-highlight: $color-blue;
+
+// Grayscale
+// @type Color
+$gray50: lighten($black, 95%);
+$gray100: lighten($black, 90%);
+$gray200: lighten($black, 80%);
+$gray300: lighten($black, 70%);
+$gray400: lighten($black, 60%);
+$gray500: lighten($black, 50%);
+$gray600: lighten($black, 40%);
+$gray700: lighten($black, 30%);
+$gray800: lighten($black, 20%);
+$gray900: lighten($black, 10%);

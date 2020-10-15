@@ -1,0 +1,28 @@
+<div class="site-header">
+
+	<div class="site-header__layout">
+		<a href="/" class="logo site-header__logo" aria-label="logo">
+			{% include "logo.njk" %}
+		</a>
+
+		<button aria-controls="primary-menu" aria-expanded="false" aria-haspopup="true" aria-label="Navigation button" class="nav-toggle">
+			<span class="visually-hidden">Main Navigation</span>
+
+			<span class="menu-icon">
+				<span class="menu-icon__slice"></span>
+				<span class="menu-icon__slice"></span>
+			</span>
+		</button>
+
+		<nav class="site-header__navigation" aria-label="Primary">
+			<ul id="primary-menu" class="menu site-header__menu">
+				{%- for nav in collections.nav -%}
+					<li class="menu__item{% if page.url == nav.url %} menu__item--is-active{% endif %}">
+						<a class="menu__link" href="/{{ nav.fileSlug }}">{{ nav.data.pageTitle }}</a>
+					</li>
+				{%- endfor -%}
+			</ul>
+		</nav>
+	</div>
+
+</div>

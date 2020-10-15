@@ -1,0 +1,101 @@
+/*
+ * Table
+ *
+ * Customizes the `.table` component with basic values, each used across all
+ * table variations.
+ *
+ *****************************************************************************/
+
+$table-cell-padding: 0.75rem !default;
+$table-cell-padding-sm: 0.25rem !default;
+
+$table-bg: transparent !default;
+$table-accent-bg: rgba($color-primary, 0.1) !default;
+
+$table-border-width: 1px !default;
+$table-border-color: $gray200 !default;
+
+$table-head-bg: $gray100 !default;
+$table-head-color: $black !default;
+
+.table {
+    background-color: $table-bg;
+    margin-bottom: $gutter;
+    max-width: 100%;
+    width: 100%;
+
+    th,
+    td {
+        border-top: $table-border-width solid $table-border-color;
+        padding: $table-cell-padding;
+        text-align: inherit;
+        vertical-align: top;
+    }
+    thead th {
+        border-bottom: (2 * $table-border-width) solid $table-border-color;
+        vertical-align: bottom;
+    }
+    tbody + tbody {
+        border-top: (2 * $table-border-width) solid $table-border-color;
+    }
+    caption {
+        caption-side: bottom;
+        color: $gray800;
+        padding-bottom: 0.75rem;
+        padding-top: 0.75rem;
+        text-align-last: left;
+    }
+    .thead-fill {
+        background-color: $table-head-bg;
+        color: $table-head-color;
+    }
+}
+
+// Condensed table w/ half padding
+.table--sm {
+    th,
+    td {
+        padding: $table-cell-padding-sm;
+    }
+}
+
+// Bordered table
+// Add borders all around the table and between all the columns.
+.table--bordered {
+    border: $table-border-width solid $table-border-color;
+
+    th,
+    td {
+        border: $table-border-width solid $table-border-color;
+    }
+
+    thead {
+        th,
+        td {
+            border-bottom-width: (2 * $table-border-width);
+        }
+    }
+}
+
+// Zebra-striping
+// Default zebra-stripe styles (alternating color and transparent backgrounds)
+.table--striped {
+    tbody tr:nth-of-type(odd) {
+        background-color: $table-accent-bg;
+    }
+}
+
+// Responsive table
+.table-responsive {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    // Prevent double border on horizontal scroll
+    > .table--bordered {
+        border: 0;
+    }
+}

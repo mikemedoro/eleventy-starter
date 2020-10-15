@@ -1,0 +1,24 @@
+/*
+ * Widths & Breakpoints
+ *
+ * This file collects all of the width + breakpoint variables.
+ *
+ *****************************************************************************/
+
+// Breakpoints for use with the Sass-MQ lib
+// @type Map
+$mq-breakpoints: (
+    xsmall: 30em,
+    small: 40em,
+    medium: 60em,
+    large: 80em,
+    xlarge: 112.5em
+);
+
+// Container's maximum width
+// @type Length
+$xsmall-width: map-get($mq-breakpoints, xsmall);
+$small-width: map-get($mq-breakpoints, small);
+$medium-width: map-get($mq-breakpoints, medium);
+$large-width: map-get($mq-breakpoints, large);
+$xlarge-width: map-get($mq-breakpoints, xlarge);

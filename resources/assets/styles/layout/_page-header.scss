@@ -1,0 +1,24 @@
+/*
+ * Page Header
+ *
+ * This file contains styles that are specific to the page header.
+ *
+ *****************************************************************************/
+
+.page-header {
+    @include size(100%, auto);
+
+    position: relative;
+
+    &__text-lockup {
+        padding: 1rem $gutter;
+    }
+    &__image {
+    }
+
+    &--standard {
+    }
+    &--hero {
+        height: 100vh;
+    }
+}

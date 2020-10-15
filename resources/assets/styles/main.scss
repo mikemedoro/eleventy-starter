@@ -1,0 +1,54 @@
+@charset 'UTF-8';
+
+/*
+ * Table of Contents
+ *
+ * This file collects all of the patials used throughout the website.
+ *
+ *****************************************************************************/
+
+// 1. Configuration and settings
+@import 'settings/config-colors';
+@import 'settings/config-type';
+@import 'settings/config-widths';
+@import 'settings/config-spacing';
+@import 'settings/config-easings';
+
+// 2. Tools
+@import 'tools/functions';
+@import 'tools/mixins';
+@import 'tools/family';
+
+// 3. Vendors
+@import '~sass-mq';
+@import '~rfs/scss';
+
+// 4. Base
+@import 'base/base';
+@import 'base/fonts';
+@import 'base/typography';
+@import 'base/fx';
+
+// 5. Global layout-related sections
+@import 'layout/general';
+@import 'layout/header';
+@import 'layout/page-header';
+@import 'layout/footer';
+
+// 6. Components
+@import 'components/button';
+@import 'components/bg-image';
+@import 'components/blockquote';
+@import 'components/list';
+@import 'components/logo';
+@import 'components/icon';
+@import 'components/table';
+// @import 'components/carousel';
+// @import 'components/accordion';
+
+// 7. Utilities and helpers
+@import 'utilities/spacing';
+@import 'utilities/helpers';
+
+// 8. Page-specific styles
+@import 'pages/home';

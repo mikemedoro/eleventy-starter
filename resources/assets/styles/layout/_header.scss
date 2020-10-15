@@ -1,0 +1,14 @@
+/*
+ * Site Header
+ *
+ * This file contains styles that are specific to the site header.
+ *
+ *****************************************************************************/
+
+.site-header {
+    // @include position(sticky, 0, null, null, 0, 99999);
+
+    &__title {
+        @include size(200px, auto);
+    }
+}
